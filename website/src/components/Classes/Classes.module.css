@@ -44,7 +44,21 @@
 .batchesChildren>button{
   width: 10%;
   align-self: right;
+  cursor: pointer;
+}
+.batchesChildren:nth-child(1){
+  animation-name: slideInBatches;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 .batchesChildren:last-child{
   border-bottom:2px solid #5e3ad4
+}
+@keyframes slideInBatches{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0);
+  }
 }
