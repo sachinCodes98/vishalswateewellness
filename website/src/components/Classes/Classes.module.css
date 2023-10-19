@@ -1,19 +1,50 @@
 .classesContainer {
-  border: 10px solid white;
   width: 100%;
-  height: 150vh;
-  position: fixed;
-  z-index: 1;
+  height: auto;
+  background-color: white;
+  box-sizing: border-box;
 }
 .classesMain {
+  border: 1px solid white;
+  box-sizing: border-box;
+  background-color: white;
   width: 100%;
   height: 100%;
-  padding: 10%;
-  display: block;
-  background-color: white;
-  z-index: -3;
 }
-.classesMain>p {
-  font-size: 75px;
+.classesTitle {
   color: #5e3ad4;
+  font-size: 55px;
+  font-weight: 900;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.05em;
+}
+.batchesDiv{
+  padding: 5%;
+}
+.batchesChildren{
+  border-top: 2px solid #5e3ad4;
+  height: auto;
+  padding: 5% 5%;
+  display: flex;
+  justify-content:space-between;
+  box-sizing: border-box;
+}
+.batchesChildren>span{
+  width: 45%;
+  color: #391d94;
+  font-size:40px;
+  font-weight: 900;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+.batchesChildren>p{
+  width: 25%;
+  text-align: right;
+}
+.batchesChildren>button{
+  width: 10%;
+  align-self: right;
+}
+.batchesChildren:last-child{
+  border-bottom:2px solid #5e3ad4
 }
