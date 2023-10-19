@@ -1,7 +1,8 @@
-import './App.css';
-import About from './components/About';
-import Intro from './components/Intro';
-import Navbar from './components/Navbar';
+import "./App.css";
+import About from "./components/About/About";
+import Classes from "./components/Classes/Classes";
+import Intro from "./components/Intro/Intro";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Intro />
       <About />
+      <Classes />
     </div>
   );
 }

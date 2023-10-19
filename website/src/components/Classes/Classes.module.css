@@ -1,0 +1,19 @@
+.classesContainer {
+  border: 10px solid white;
+  width: 100%;
+  height: 150vh;
+  position: fixed;
+  z-index: 1;
+}
+.classesMain {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  display: block;
+  background-color: white;
+  z-index: -3;
+}
+.classesMain>p {
+  font-size: 75px;
+  color: #5e3ad4;
+}

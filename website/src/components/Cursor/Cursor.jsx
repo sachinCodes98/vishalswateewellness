@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "../styles/cursor.css";
+import styles from "./Cursor.module.css"
 
 const Cursor = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -20,7 +20,7 @@ const Cursor = () => {
 
   return (
     <div
-      className="cursor"
+      className={styles.cursorMain}
       style={{
         left: cursorPosition.x + 'px',
         top: cursorPosition.y + 'px',
