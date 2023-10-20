@@ -15,54 +15,54 @@
   color: #5e3ad4;
   font-size: 55px;
   font-weight: 900;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.05em;
 }
-.batchesDiv{
+.batchesDiv {
   padding: 5%;
 }
-.batchesChildren{
+.batchesChildren {
   border-top: 2px solid #5e3ad4;
   height: auto;
   padding: 5% 5%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   box-sizing: border-box;
 }
-.batchesChildren>span{
+.batchesChildren > span {
   width: 45%;
   color: #391d94;
-  font-size:40px;
+  font-size: 40px;
   font-weight: 900;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: left;
 }
-.batchesChildren>p{
+.batchesChildren > p {
   width: 25%;
   text-align: right;
   color: #391d94;
   font-size: 25px;
 }
-.batchesChildren>button{
+.batchesChildren > button {
   width: 10%;
   height: 40px;
   align-self: right;
   cursor: pointer;
   margin: auto;
 }
-.batchesChildren:nth-child(1){
+.batchesChildren:nth-child(1) {
   animation-name: slideInBatches;
   animation-duration: 1s;
   animation-timing-function: ease;
 }
-.batchesChildren:last-child{
-  border-bottom:2px solid #5e3ad4
+.batchesChildren:last-child {
+  border-bottom: 2px solid #5e3ad4;
 }
-@keyframes slideInBatches{
-  from{
+@keyframes slideInBatches {
+  from {
     transform: translateX(-100%);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }

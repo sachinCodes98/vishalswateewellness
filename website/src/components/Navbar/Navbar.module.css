@@ -8,13 +8,14 @@
   align-items: center;
   background-color: #050715;
   position: fixed;
+  z-index: 10;
 }
 .navLeftBox {
   /* border: 1px solid rgb(171, 53, 73); */
   width: 55%;
   display: flex;
   justify-content: space-around;
-  padding-left: 8%; 
+  padding-left: 8%;
 }
 .navRightBox {
   /* border: 1px solid rgb(196, 182, 212); */
@@ -28,66 +29,66 @@
   padding: 10px;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #E5E5E5
+  color: #e5e5e5;
 }
-.navLeftBtns:hover{
-    cursor: pointer;
-    /* background-color: #031e37; */
-    animation: textanimate 0.3s ease-in ;
-    color: #8b77cd;
+.navLeftBtns:hover {
+  cursor: pointer;
+  /* background-color: #031e37; */
+  animation: textanimate 0.3s ease-in;
+  color: #8b77cd;
 }
-@keyframes textanimate{
-    0%{
-        opacity: 0
-    }
-    100%{
-        opacity: 1;
-    }
+@keyframes textanimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.membershipBtnDiv{
-    background-color: #5e3ad4;
-    height: 70%;
-    margin: auto;
-    border-radius:5px
+.membershipBtnDiv {
+  background-color: #5e3ad4;
+  height: 70%;
+  margin: auto;
+  border-radius: 5px;
 }
-.membershipBtnDiv>p{
-    color: #E5E5E5;
-    margin: auto;
-    justify-self: center;
-    padding: 10px 20px 10px 20px;
+.membershipBtnDiv > p {
+  color: #e5e5e5;
+  margin: auto;
+  justify-self: center;
+  padding: 10px 20px 10px 20px;
 }
-.membershipBtnDiv:hover{
-    background-color: #7f63d9;
-    color: #b1a8a8;
-    cursor: pointer;
-    animation: rotateX 2s forwards;
-    transform-origin: center bottom;
+.membershipBtnDiv:hover {
+  background-color: #7f63d9;
+  color: #b1a8a8;
+  cursor: pointer;
+  animation: rotateX 2s forwards;
+  transform-origin: center bottom;
 }
-.loginBtnDiv{
-    color: #E5E5E5;
-    width: 22%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+.loginBtnDiv {
+  color: #e5e5e5;
+  width: 22%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
-.loginBtnDiv:hover{
-    cursor: pointer;
-    animation: rotateX 1.5s forwards;
-    transform-origin: center bottom;
+.loginBtnDiv:hover {
+  cursor: pointer;
+  animation: rotateX 1.5s forwards;
+  transform-origin: center bottom;
 }
 @keyframes rotateX {
-    0% {
-      transform: rotateY(0deg); /* Start with no rotation */
-    }
-    100% {
-      transform: rotateY(360deg); /* Rotate to 360 degrees on hover */
-    }
+  0% {
+    transform: rotateY(0deg); /* Start with no rotation */
   }
-.loginIcon{
-    /* filter: grayscale(100%); */
-    width: 100%;
-    height: 30px;
-    margin: auto;
-    margin-right: 10px;
+  100% {
+    transform: rotateY(360deg); /* Rotate to 360 degrees on hover */
+  }
+}
+.loginIcon {
+  /* filter: grayscale(100%); */
+  width: 100%;
+  height: 30px;
+  margin: auto;
+  margin-right: 10px;
 }

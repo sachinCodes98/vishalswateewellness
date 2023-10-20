@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import styles from "./Cursor.module.css"
+import React, { useState, useEffect } from "react";
+import styles from "./Cursor.module.css";
 
 const Cursor = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -10,11 +10,11 @@ const Cursor = () => {
       setCursorPosition({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener('mousemove', updateCursorPosition);
+    window.addEventListener("mousemove", updateCursorPosition);
 
     // Clean up the event listener when the component unmounts.
     return () => {
-      window.removeEventListener('mousemove', updateCursorPosition);
+      window.removeEventListener("mousemove", updateCursorPosition);
     };
   }, []);
 
@@ -22,8 +22,8 @@ const Cursor = () => {
     <div
       className={styles.cursorMain}
       style={{
-        left: cursorPosition.x + 'px',
-        top: cursorPosition.y + 'px',
+        left: cursorPosition.x + "px",
+        top: cursorPosition.y + "px",
       }}
     ></div>
   );
