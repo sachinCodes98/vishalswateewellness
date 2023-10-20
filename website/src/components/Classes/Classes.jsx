@@ -22,9 +22,9 @@ const Classes = () => {
               name={"Book Now"}
               bgColor={"#391d94"}
               border={"none"}
-              width={"20%"}
+              width={"17%"}
               color1={"aliceblue"}
-              fontSize={"20px"}
+              fontSize={"17px"}
             />
           </div>
           <div className={`${styles.batchesChildren} ${shouldAnimate ? styles.animated : ''}`}>
@@ -34,9 +34,9 @@ const Classes = () => {
               name={"Book Now"}
               bgColor={"#391d94"}
               border={"none"}
-              width={"20%"}
+              width={"17%"}
               color1={"aliceblue"}
-              fontSize={"20px"}
+              fontSize={"17px"}
             />
           </div>
           <div className={`${styles.batchesChildren} ${shouldAnimate ? styles.animated : ''}`}>
@@ -46,9 +46,9 @@ const Classes = () => {
               name={"Book Now"}
               bgColor={"#391d94"}
               border={"none"}
-              width={"20%"}
+              width={"17%"}
               color1={"aliceblue"}
-              fontSize={"20px"}
+              fontSize={"17px"}
             />
           </div>
         </div>

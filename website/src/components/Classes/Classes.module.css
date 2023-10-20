@@ -40,11 +40,15 @@
 .batchesChildren>p{
   width: 25%;
   text-align: right;
+  color: #391d94;
+  font-size: 25px;
 }
 .batchesChildren>button{
   width: 10%;
+  height: 40px;
   align-self: right;
   cursor: pointer;
+  margin: auto;
 }
 .batchesChildren:nth-child(1){
   animation-name: slideInBatches;
