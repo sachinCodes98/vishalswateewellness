@@ -5,6 +5,7 @@ import Classes from "./components/Classes/Classes";
 import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
 import WhyUs from "./components/WhyUs/WhyUs";
+import JoinUs from "./components/JoinUs/JoinUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ParallaxProvider>
         <WhyUs />
       </ParallaxProvider>
+        <JoinUs />
     </div>
   );
 }

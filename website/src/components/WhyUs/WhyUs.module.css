@@ -37,6 +37,7 @@
   width: 100%;
   height: 100vh;
   transition: transform 0.6s ease; /* Place it behind other content */
+  z-index: -4;
 }
 .parallaxImage:hover {
   transform: scale(1.2);
@@ -59,4 +60,29 @@
   /* margin: 10% 20% 0% 20%; */
   text-align: left;
   animation: slideLeftIn 3s ease-in;
+}
+@keyframes square-in-bottom-left {
+  from {
+    clip-path: inset(0 0 100% 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:square:bottom-left"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-bottom-left both;
+}
+
+@keyframes square-in-bottom-right {
+  from {
+    clip-path: inset(0 100% 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:square:bottom-right"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-bottom-right both;
 }

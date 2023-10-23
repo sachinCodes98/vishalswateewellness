@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./customStyles.css";
 import styles from "./WhyUs.module.css";
 // import { AdvancedBannerTop } from './AdvancedBanner'
@@ -6,25 +6,37 @@ import Heading1 from "../Headings/Heading1";
 import whyUsVideo from "../../gallery/whyUsVideo.mp4";
 import bgImgWhyUs from "../../gallery/bgImgWhyUs.png";
 import modelWorkOutPic from "../../gallery/modelWorkOutPic.png";
-import { useEffect } from "react";
 
 const WhyUs = () => {
+  const [inViewport, setInViewport] = useState(false);
+  const elementRef1 = useRef(null);
+  const elementRef2 = useRef(null);
+
   useEffect(() => {
-    // Add a scroll event listener to handle the parallax effect
-    const handleScroll = () => {
-      const img = document.querySelector(".parallaxImage");
-      if (img) {
-        const scrollPosition = window.scrollY;
-        img.style.transform = `translateY(-${scrollPosition / 2}px)`; // Adjust the speed of the parallax effect by changing the divisor
+    // Define the options for the Intersection Observer
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% of the element is in the viewport
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        // Element is in the viewport
+        setInViewport(true);
       }
-    };
+    }, options);
 
-    window.addEventListener("scroll", handleScroll);
+    // Start observing the element
+    if (elementRef1.current) {
+      observer.observe(elementRef1.current);
+    }
+    if (elementRef2.current) {
+      observer.observe(elementRef2.current);
+    }
 
-    return () => {
-      // Clean up the event listener on component unmount
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // Clean up the observer when the component unmounts
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -54,7 +66,11 @@ const WhyUs = () => {
             />
           </video>
         </div>
-        <div className={styles.gridBox2}>
+        <div
+          ref={elementRef1}
+          transition-style={inViewport ? "in:square:bottom-left" : ""}
+          className={styles.gridBox2}
+        >
           <div className={styles.gridBox2Child}>
             <Heading1 classProp={"heading1"} contentName={"Community"} />
             <p className={styles.communityText}>
@@ -68,8 +84,12 @@ const WhyUs = () => {
 
         {/* ************ SECOND ROW ************ */}
 
-        <div className={styles.gridBox2}>
-          <div className={styles.gridBox2Child}>
+        <div 
+        ref={elementRef2}
+        transition-style={inViewport ? "in:square:bottom-right" : ""}
+        className={styles.gridBox2}>
+          <div
+           className={styles.gridBox2Child}>
             <Heading1 classProp={"heading1"} contentName={"Motivation"} />
             <p className={styles.communityText}>
               I'm a paragraph. Click here to add your own text and edit me. It’s

@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <div className={styles.introContainer}>
       <div className={styles.introBgOnly}></div>
-      <div className={styles.introTextDiv}>
+      <div transition-style="in:circle:hesitate" className={styles.introTextDiv}>
         <p className={styles.introText}>
           Swatee Vishal- Functional Fitness Studio
         </p>
