@@ -10,7 +10,7 @@ import modelWorkOutPic from "../../gallery/modelWorkOutPic.png";
 const WhyUs = () => {
   const [inViewport, setInViewport] = useState(false);
   const elementRef1 = useRef(null);
-  const elementRef2 = useRef(null);
+  // const elementRef2 = useRef(null);
 
   useEffect(() => {
     // Define the options for the Intersection Observer
@@ -31,9 +31,7 @@ const WhyUs = () => {
     if (elementRef1.current) {
       observer.observe(elementRef1.current);
     }
-    if (elementRef2.current) {
-      observer.observe(elementRef2.current);
-    }
+    
 
     // Clean up the observer when the component unmounts
     return () => observer.disconnect();
@@ -85,7 +83,7 @@ const WhyUs = () => {
         {/* ************ SECOND ROW ************ */}
 
         <div 
-        ref={elementRef2}
+        // ref={elementRef2}
         transition-style={inViewport ? "in:square:bottom-right" : ""}
         className={styles.gridBox2}>
           <div
@@ -100,7 +98,9 @@ const WhyUs = () => {
           </div>
         </div>
         <div className={styles.gridBox1}>
-          <img className={styles.parallaxImage} src={bgImgWhyUs} alt="" />
+          <div className={styles.emptyDiv}>
+            <img src={bgImgWhyUs} className={styles.parallaxImage} alt="" />
+          </div>
         </div>
 
         {/* ************ THIRD ROW ************ */}

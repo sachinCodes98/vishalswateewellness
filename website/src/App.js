@@ -14,10 +14,10 @@ function App() {
       <Intro />
       <About />
       <Classes />
-      <ParallaxProvider>
-        <WhyUs />
-      </ParallaxProvider>
-        <JoinUs />
+      {/* <ParallaxProvider> */}
+        <WhyUs />  
+      {/* </ParallaxProvider> */}
+      <JoinUs />
     </div>
   );
 }

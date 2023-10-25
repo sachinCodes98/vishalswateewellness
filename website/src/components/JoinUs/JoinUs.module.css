@@ -1,0 +1,61 @@
+.joinUsContainer {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+.joinUsMain {
+  width: 30%;
+  height: 60%;
+  margin: 7.5% 20%;
+  box-sizing: border-box;
+}
+.joinUsTitle {
+    width: 90%;
+  color: aliceblue;
+  font-size: 45px;
+  font-weight: 900;
+}
+.joinUsDescription {
+  color: aliceblue;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing:0.001em;
+}
+.joinUsInputsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.clientNameInput {
+  text-decoration: none;
+  border-radius: none;
+  border: none;
+  font-size:19px;
+  padding:6px 10px;
+}
+.clientNumberInput {
+    text-decoration: none;
+    border-radius: none;
+    border: none;
+    font-size:19px;
+    padding:6px 10px;
+}
+.joinUsSubmitBtn {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #5e3ad4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: -100;
+  border-radius: 5%;
+  cursor: pointer;
+}
