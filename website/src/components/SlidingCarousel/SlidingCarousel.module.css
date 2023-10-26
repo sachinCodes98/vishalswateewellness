@@ -27,6 +27,34 @@
       width: 40vw;
       height: auto;
       overflow: hidden;
+      transition: transform 0.3s;
+  }
+ .overlayPTag {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 44%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    opacity: 0; /* Initially, the overlay is hidden */
+    transform: translateY(100%); /* Start offscreen below the image */
+    transition: transform 0.3s, opacity 0.3s; /* Add animation transitions */
+  }
+  
+ .overlayPTag p {
+    color: #fff; /* Text color for the additional content */
+  }
+  
+  .carousel-item:hover img {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
+  
+  .carousel-item:hover .overlayPTag {
+    opacity: 1; /* Show the overlay on hover */
+    transform: translateY(0); /* Slide the overlay up from below */
   }
   @keyframes slide {
     0% {
@@ -36,7 +64,4 @@
       transform: translateX(-100%);
     }
   }
-  .active{
-    transform: scale(1.2);
-    mix-blend-mode: hard-light;
-  }
+ 
