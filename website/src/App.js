@@ -6,6 +6,7 @@ import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
 import WhyUs from "./components/WhyUs/WhyUs";
 import JoinUs from "./components/JoinUs/JoinUs";
+import { SlidingCarousel } from "./components/SlidingCarousel/SlidingCarousel";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <WhyUs />  
       {/* </ParallaxProvider> */}
       <JoinUs />
+      <SlidingCarousel />
     </div>
   );
 }

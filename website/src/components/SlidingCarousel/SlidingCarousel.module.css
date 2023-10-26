@@ -1,0 +1,42 @@
+.sliding-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    background-color: white;
+  }
+  
+  .carousel-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    animation: slide 12s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  .carousel-item {
+    flex: 0 0 25%; /* Adjust the width of each item as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+  }
+  .carousel-item img{
+      width: 40vw;
+      height: auto;
+      overflow: hidden;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .active{
+    transform: scale(1.2);
+    mix-blend-mode: hard-light;
+  }
