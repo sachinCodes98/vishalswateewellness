@@ -1,0 +1,17 @@
+.footerContainer{
+    height: 120vh;
+    width: 100%;
+    background-color: azure;
+}
+.footerMain{
+    height: 90%;
+    /* margin-top:10%; */
+    background-color: #5e3ad4;
+}
+.formContainer{
+    width: 30%;
+    margin-left: 20%;
+    padding-top: 20% ;
+    color:aliceblue ;
+    /* margin: auto; */
+}
