@@ -1,0 +1,9 @@
+.heading3{
+    color:aliceblue;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    margin: auto;
+    text-justify: inter-word;
+}

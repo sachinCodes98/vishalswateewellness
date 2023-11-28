@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./footer.module.css";
 import ContactForm from "../ContactForm/ContactForm";
+import AddressComp from "../AddressComp/AddressComp";
+import FooterNav from "../FooterNavigation/FooterNav";
 
 const Footer = () => {
   return (
@@ -14,7 +16,10 @@ const Footer = () => {
           <ContactForm />
         </div>
         <div className={styles.addressComp}>
-          <ContactForm />
+          <AddressComp />
+        </div>
+        <div className={styles.footerNavComp}>
+          <FooterNav />
         </div>
       </div>
     </div>

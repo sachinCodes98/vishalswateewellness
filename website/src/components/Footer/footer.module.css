@@ -5,18 +5,28 @@
 }
 .footerMain{
     height: 90%;
+    width: 100%;
     /* margin-top:10%; */
     background-color: #5e3ad4;
     display: flex;
 }
 .formContainer{
     /* border: 1px solid white; */
-    width: 40%;
+    width: 47%;
     margin-left: 10%;
     padding-top: 10% ;
     color:aliceblue ;
     /* margin: auto; */
 }
 .addressComp{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 38%;
+    text-justify: distribute;
+}
+.footerNavComp{
+    /* border: 1px solid white; */
+    width: 15%;
+    text-align: center;
     margin: auto;
 }

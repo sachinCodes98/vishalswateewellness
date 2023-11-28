@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button1 = ({ name, bgColor, border, width, color1, fontSize }) => {
+const Button1 = ({ name, bgColor, border, width, color1, fontSize, height }) => {
   return (
     <>
       <button
@@ -10,6 +10,8 @@ const Button1 = ({ name, bgColor, border, width, color1, fontSize }) => {
           width: width,
           color: color1,
           fontSize: fontSize,
+          cursor:'pointer',
+          height:height
         }}
       >
         {name}
