@@ -7,6 +7,7 @@
     height: 90%;
     /* margin-top:10%; */
     background-color: #5e3ad4;
+    display: flex;
 }
 .formContainer{
     /* border: 1px solid white; */
@@ -15,4 +16,7 @@
     padding-top: 10% ;
     color:aliceblue ;
     /* margin: auto; */
+}
+.addressComp{
+    margin: auto;
 }

@@ -13,6 +13,9 @@ const Footer = () => {
         <div className={styles.formContainer}>
           <ContactForm />
         </div>
+        <div className={styles.addressComp}>
+          <ContactForm />
+        </div>
       </div>
     </div>
   );
