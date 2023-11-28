@@ -1,0 +1,49 @@
+.contactFormpTag{
+    /* border: 1px solid white; */
+    color:aliceblue;
+    text-align: start;
+    font-size: 18px;
+    margin: none;
+    letter-spacing: 0.09em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ContactFormMain{
+    text-align: left;
+}
+.formLabel{
+   text-align: start;
+   margin-bottom: 5%;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.formInput{
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5%;
+}
+.formInput:focus {
+    border: none;
+    border-bottom: 1px solid rgb(58, 57, 57);
+    color: rgb(201, 205, 207);
+  }
+  .formInput::placeholder {
+    color: #999;
+  }
+  .formInput:focus::placeholder {
+    color: rgb(212, 219, 226); 
+  }
+  .formSubmitBtn{
+    text-decoration: none;
+    border: none;
+    background-color: #8b77cd;
+    color: bisque;
+    width: 20%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.071em;
+    margin-left: 30%;
+    cursor: pointer;
+  }

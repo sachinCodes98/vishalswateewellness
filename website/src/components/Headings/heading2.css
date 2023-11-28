@@ -1,0 +1,11 @@
+.heading2 {
+  color: aliceblue;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.0001em;
+  width: 90%;
+  /* margin: auto; */
+  text-align: start;
+  margin-bottom: 3px;
+}

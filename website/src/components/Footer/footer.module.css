@@ -9,9 +9,10 @@
     background-color: #5e3ad4;
 }
 .formContainer{
-    width: 30%;
-    margin-left: 20%;
-    padding-top: 20% ;
+    /* border: 1px solid white; */
+    width: 40%;
+    margin-left: 10%;
+    padding-top: 10% ;
     color:aliceblue ;
     /* margin: auto; */
 }
