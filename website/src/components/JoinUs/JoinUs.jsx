@@ -21,8 +21,9 @@ const JoinUs = () => {
             <br />
             <input
               className={styles.clientNumberInput}
-              type="text"
+              type="number"
               placeholder="Phone Number"
+              inputMode="numeric"
             />
           </div>
           <br />

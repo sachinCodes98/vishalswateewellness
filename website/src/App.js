@@ -1,27 +1,22 @@
-import { ParallaxProvider } from "react-scroll-parallax";
+// import { ParallaxProvider } from "react-scroll-parallax";
 import "./App.css";
-import About from "./components/About/About";
-import Classes from "./components/Classes/Classes";
-import Intro from "./components/Intro/Intro";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import WhyUs from "./components/WhyUs/WhyUs";
-import JoinUs from "./components/JoinUs/JoinUs";
-import { SlidingCarousel } from "./components/SlidingCarousel/SlidingCarousel";
-import Footer from "./components/Footer/Footer";
+import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/Aboutpage/AboutPage";
+import ClassesPage from "./pages/ClassesPage/ClassesPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Intro />
-      <About />
-      <Classes />
-      {/* <ParallaxProvider> */}
-        <WhyUs />  
-      {/* </ParallaxProvider> */}
-      <JoinUs />
-      <SlidingCarousel />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/classes" element={<ClassesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
     </div>
   );
 }

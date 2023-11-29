@@ -38,15 +38,41 @@
   text-decoration: none;
   border-radius: none;
   border: none;
+  outline: none;
   font-size:19px;
   padding:6px 10px;
+  background-color: #cec3ef;
+}
+.clientNameInput:focus{
+  border: none;
+  border-bottom: 2px solid rgb(36, 36, 93);
+  color: rgb(201, 205, 207);
+}
+.clientNameInput::placeholder{
+  font-size:2vh;
 }
 .clientNumberInput {
-    text-decoration: none;
-    border-radius: none;
-    border: none;
-    font-size:19px;
-    padding:6px 10px;
+  text-decoration: none;
+  border-radius: none;
+  border: none;
+  outline: none;
+  font-size:19px;
+  padding:6px 10px;
+  background-color: #cec3ef;
+  -moz-appearance: textfield; 
+}
+.clientNumberInput::-webkit-inner-spin-button,
+.clientNumberInput::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Safari and Chrome */
+  margin: 0; /* Removes the default margin */
+}
+.clientNumberInput:focus{
+  border: none;
+  border-bottom: 2px solid rgb(36, 36, 93);
+  color: rgb(201, 205, 207);
+}
+.clientNumberInput::placeholder{
+  font-size:2vh;
 }
 .joinUsSubmitBtn {
   text-decoration: none;

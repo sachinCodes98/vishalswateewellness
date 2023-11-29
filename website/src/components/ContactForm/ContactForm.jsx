@@ -13,32 +13,48 @@ const ContactForm = () => {
             Full Name
           </label>
           <br />
-          <input className={styles.formInput} type="text" placeHolder="" />
+          <input
+            id="fullName" // Add a unique id attribute
+            className={styles.formInput}
+            type="text"
+            placeholder=""
+          />
           <br />
           <label className={styles.formLabel} htmlFor="email">
             Email *
           </label>
           <br />
           <input
+            id="email" // Add a unique id attribute
             className={styles.formInput}
             type="email"
-            placeHolder=""
+            placeholder=""
             required
           />
           <br />
-          <label className={styles.formLabel} htmlFor="number">
+          <label className={styles.formLabel} htmlFor="phoneNumber">
             Phone Number
           </label>
           <br />
-          <input className={styles.formInput} type="text" placeHolder="" />
+          <input
+            id="phoneNumber" // Add a unique id attribute
+            className={styles.formInput}
+            type="text"
+            placeholder=""
+          />
           <br />
           <label className={styles.formLabel} htmlFor="message">
             Your Message
           </label>
           <br />
-          <textarea className={styles.formInput} type="text" placeHolder="" />
+          <textarea
+            id="message" // Add a unique id attribute
+            className={styles.formInput}
+            type="text"
+            placeholder=""
+          ></textarea>
           <br />
-          <input className={styles.formSubmitBtn} type="submit" />
+          <input id="formSubmitBtn" className={styles.formSubmitBtn} type="submit" />
         </form>
       </div>
     </div>
