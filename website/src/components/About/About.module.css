@@ -15,7 +15,9 @@
   width: 49%;
   height: 100%;
   background-image: url("../../gallery/gymPicBelowIntro.webp");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .aboutMainDiv {
   /* border: 10px solid white; */
@@ -51,5 +53,51 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+
+@media (max-width: 480px){
+  .aboutChild {
+    border: 10px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  .aboutBgDiv {
+    width: 97%;
+    height: 100%;
+    background-image: url("../../gallery/gymPicBelowIntro.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* display: none; */
+  }
+  .aboutMainDiv {
+    /* border: 10px solid white; */
+    width: 97%;
+    height: 100%;
+    background-color: #000;
+  }
+  .aboutHeader {
+    font-size: 5vh;
+  }
+  .aboutText {
+    font-size: 2vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 768px){
+  .aboutHeader {
+    font-size: 4vh;
+  }
+  .aboutText {
+    font-size: 2vh;
+    margin-bottom: 5vh;
   }
 }

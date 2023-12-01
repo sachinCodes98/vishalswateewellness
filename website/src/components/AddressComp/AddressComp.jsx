@@ -17,13 +17,8 @@ const AddressComp = () => {
         <span className={styles.contactSpans}>Fax: 123-456-7890</span>
       </div>
       <Button1
+        classProp={"button2"}
         name={"Book A Free Trial Now"}
-        bgColor={"transparent"}
-        border={"2px solid aliceblue"}
-        width={"80%"}
-        color1={"white"}
-        fontSize={"23px"}
-        height={"45px"}
       />
     </>
   );

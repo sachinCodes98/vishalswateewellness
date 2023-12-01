@@ -1,18 +1,13 @@
 import React from "react";
+import "../Button1/button1.css"
+import "../Button1/button2.css"
 
-const Button1 = ({ name, bgColor, border, width, color1, fontSize, height }) => {
+
+const Button1 = ({ name, classProp }) => {
   return (
     <>
       <button
-        style={{
-          backgroundColor: bgColor,
-          border: border,
-          width: width,
-          color: color1,
-          fontSize: fontSize,
-          cursor:'pointer',
-          height:height
-        }}
+      className={classProp}
       >
         {name}
       </button>

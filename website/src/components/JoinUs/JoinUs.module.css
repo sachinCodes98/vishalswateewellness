@@ -89,3 +89,57 @@
     background-color: #d9d2ef;
     color: black;
 }
+
+
+
+/* Tablet Styles (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .joinUsMain {
+    width: 70%;
+    margin: 10% 15%;
+  }
+
+  .joinUsTitle {
+    font-size: 35px;
+  }
+
+  .joinUsDescription {
+    font-size: 16px;
+  }
+
+  .clientNameInput,
+  .clientNumberInput {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+
+  .joinUsSubmitBtn {
+    font-size: 12px;
+  }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .joinUsMain {
+    width: 90%;
+    margin: 15% 5%;
+  }
+
+  .joinUsTitle {
+    font-size: 30px;
+  }
+
+  .joinUsDescription {
+    font-size: 14px;
+  }
+
+  .clientNameInput,
+  .clientNumberInput {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .joinUsSubmitBtn {
+    font-size: 10px;
+  }
+}

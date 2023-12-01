@@ -4,6 +4,11 @@ import loginIcon from "../../gallery/loginIcon.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <div className={styles.navParent}>
       <div className={styles.navLeftBox}>
@@ -23,6 +28,15 @@ const Navbar = () => {
         </div>
       </div>
       <div className={styles.navRightBox}>
+
+
+      <div className={styles.hamburgerMenu} onClick={toggleMenu}>
+          <div className={`${styles.bar} ${isMenuOpen && styles.barOpen}`} />
+          <div className={`${styles.bar} ${isMenuOpen && styles.barOpen}`} />
+          <div className={`${styles.bar} ${isMenuOpen && styles.barOpen}`} />
+        </div>
+
+
         <div className={styles.membershipBtnDiv}>
           <p>Membership</p>
         </div>
@@ -31,6 +45,30 @@ const Navbar = () => {
           <p>Login</p>
         </div>
       </div>
+      {isMenuOpen && (
+        <div className={styles.mobileMenu}>
+          <Link to="/" onClick={toggleMenu}>
+            Home
+          </Link>
+          <Link to="/about" onClick={toggleMenu}>
+            About
+          </Link>
+          <Link to="/classes" onClick={toggleMenu}>
+            Classes
+          </Link>
+          <Link to="/challenges" onClick={toggleMenu}>
+          Challenges
+          </Link>
+          <Link to="/plans" onClick={toggleMenu}>
+          Plans
+          </Link>
+          {/* <div onClick={toggleMenu}>Challenges</div>
+          <div onClick={toggleMenu}>Plans</div> */}
+          <Link to="/contact" onClick={toggleMenu}>
+            Contact
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

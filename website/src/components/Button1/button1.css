@@ -1,0 +1,24 @@
+.button1{
+    font-size: 2.61136712749616vh;
+    width:17%;
+    cursor: pointer;
+    background-color:#391d94 ;
+    border: none;
+    color: aliceblue;
+}
+
+  /* Responsive styles for smaller screens */
+  @media all and (max-width: 768px) {
+    .button1 {
+      font-size: 2.150537634408602vh;
+      height: 5.376344086021505vh;
+    }
+  }
+  
+  @media all and (max-width: 480px) {
+      .button1{
+    width: 70%;
+      font-size: 1.8433179723502304vh;
+      height: 4.608294930875576vh;
+    }
+  }

@@ -26,11 +26,7 @@ const Classes = () => {
             <p>45 Min</p>
             <Button1
               name={"Book Now"}
-              bgColor={"#391d94"}
-              border={"none"}
-              width={"17%"}
-              color1={"aliceblue"}
-              fontSize={"17px"}
+              classProp={"button1"}
             />
           </div>
           <div
@@ -42,11 +38,7 @@ const Classes = () => {
             <p>45 Min</p>
             <Button1
               name={"Book Now"}
-              bgColor={"#391d94"}
-              border={"none"}
-              width={"17%"}
-              color1={"aliceblue"}
-              fontSize={"17px"}
+              classProp={"button1"}
             />
           </div>
           <div
@@ -58,11 +50,7 @@ const Classes = () => {
             <p>45 Min</p>
             <Button1
               name={"Book Now"}
-              bgColor={"#391d94"}
-              border={"none"}
-              width={"17%"}
-              color1={"aliceblue"}
-              fontSize={"17px"}
+              classProp={"button1"}
             />
           </div>
         </div>
