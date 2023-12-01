@@ -48,3 +48,35 @@
   margin-left: 30%;
   cursor: pointer;
 }
+
+/* mobile screen media */
+
+@media all and (max-width: 480px){
+  .contactFormpTag {
+    text-align: center;
+    font-size: 16px;
+  }
+  .ContactFormMain {
+    text-align: center;
+  }
+  .formSubmitBtn {
+    margin:auto;
+    font-size: 14px;
+  }
+}
+
+/* tablet screen media */
+
+@media all and (max-width: 768px){
+  .contactFormpTag {
+    text-align: center;
+    font-size: 18px;
+  }
+  .ContactFormMain {
+    text-align: center;
+  }
+  .formSubmitBtn {
+    margin:auto;
+    font-size: 16px;
+  }
+}

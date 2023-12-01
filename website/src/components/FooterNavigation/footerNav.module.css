@@ -1,16 +1,33 @@
-.footerNavLink{
-    color: aliceblue;
+.footerNavLink {
     text-align: left;
+    text-decoration: none;
+    color: aliceblue;
 }
-.logosContainer{
-    width: 70%;
-    display: flex;
-    /* margin: auto; */
-    justify-content: space-between;
-    margin-top: 5vh;
+.logosContainer {
+  width: 70%;
+  display: flex;
+  /* margin: auto; */
+  justify-content: space-between;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
-.logosDiv>img:hover{
-    cursor: pointer;
-    width: 5vh;
-    height: 5vh;
+.logosDiv > img:hover {
+  cursor: pointer;
+  width: 5vh;
+  height: 5vh;
+}
+
+/* mobile screen media */
+
+@media all and (max-width: 480px) {
+  .footerNavLink {
+      text-align: center;
+      text-decoration: none;
+      color: aliceblue;
+  }
+  .logosContainer {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 7vh;
+  }
 }
