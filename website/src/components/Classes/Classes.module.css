@@ -8,7 +8,6 @@
 }
 
 .classesMain {
-  border: 1px solid white;
   box-sizing: border-box;
   background-color: white;
   width: 100%;
@@ -63,6 +62,9 @@
 .batchesChildren:last-child {
   border-bottom: 2px solid #5e3ad4;
 }
+.animated{
+ animation: slideInBatches 3s ; 
+}
 
 @keyframes slideInBatches {
   from {
@@ -73,6 +75,7 @@
   }
 }
 
+
 /* Responsive styles for tablet */
 @media (max-width: 768px) {
   .batchesDiv {
@@ -82,8 +85,10 @@
 
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
+
   .batchesDiv {
     padding: 2%; /* Further adjusted padding for smaller screens */
+    margin-top: 4vh;
   }
 
   .batchesChildren {

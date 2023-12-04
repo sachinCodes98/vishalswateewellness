@@ -31,7 +31,7 @@ const About = () => {
         <div ref={componentRef} className={styles.aboutBgDiv}></div>
         {playAnimation && (
           <div className={styles.aboutMainDiv}>
-            <p className={styles.aboutHeader}>About Swatee Wellness</p>
+            <p className={styles.aboutHeader}>About Vishal Wellness</p>
             <p className={styles.aboutText}>
               I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me to add your own

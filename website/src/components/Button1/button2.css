@@ -18,8 +18,9 @@
   
   @media all and (max-width: 480px) {
       .button2{
-    width: 70%;
+    width: 90%;
       font-size: 1.8433179723502304vh;
       height: 4.608294930875576vh;
+      letter-spacing: 0.09em;
     }
   }

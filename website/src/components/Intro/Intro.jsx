@@ -8,7 +8,7 @@ const Intro = () => {
       <div className={styles.introBgOnly}></div>
       <div transition-style="in:circle:hesitate" className={styles.introTextDiv}>
         <p className={styles.introText}>
-          Swatee Vishal- Functional Fitness Studio
+          Vishal's Functional Fitness Studio
         </p>
         <div className={styles.introBoldTextDiv}>
           <span className={styles.fitnessTextBold}>

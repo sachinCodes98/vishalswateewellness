@@ -12,3 +12,7 @@
     color: aliceblue;
     letter-spacing: 0.09em;
 }
+.contactSpans a{
+    text-decoration: none;
+    color: aliceblue;
+}

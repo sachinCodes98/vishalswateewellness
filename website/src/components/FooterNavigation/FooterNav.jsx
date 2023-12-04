@@ -28,13 +28,19 @@ const FooterNav = () => {
         </p>
         <div className={styles.logosContainer}>
           <div className={styles.logosDiv}>
-            <img src={ytLogo} alt="ytLogo" />
+            <Link to="">
+              <img src={ytLogo} alt="ytLogo" />
+            </Link>
           </div>
           <div className={styles.logosDiv}>
-            <img src={instaLogo} alt="instaLogo" />
+            <Link to="https://www.instagram.com/vishalfitcoach24/?hl=en">
+              <img src={instaLogo} alt="instaLogo" />
+            </Link>
           </div>
           <div className={styles.logosDiv}>
-            <img src={fbLogo} alt="fbLogo" />
+            <Link to="https://www.facebook.com/vishalfitcoach24">
+              <img src={fbLogo} alt="fbLogo" />
+            </Link>
           </div>
         </div>
     </>
