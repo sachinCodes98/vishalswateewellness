@@ -22,7 +22,7 @@ const Classes = () => {
               shouldAnimate ? styles.animated : ""
             }`}
           >
-            <span>Swatee HIIT</span>
+            <span>Vishal HIIT</span>
             <p>45 Min</p>
             <Button1
               name={"Book Now"}
