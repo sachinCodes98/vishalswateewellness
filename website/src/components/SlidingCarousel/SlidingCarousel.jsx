@@ -8,11 +8,11 @@ import image3 from "../../gallery/sliding03.png";
 import image4 from "../../gallery/sliding04.png";
 import image5 from "../../gallery/sliding05.png";
 
-const text1 = "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com";
-const text2 = "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com";
-const text3 = "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com";
-const text4 = "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com";
-const text5 = "@wix: #wix, #website, #freewebsite, #websitetemplate, #wix.com";
+const text1 = "Vishal's Functional Fitness Studio";
+const text2 = "Vishal's Functional Fitness Studio";
+const text3 = "Vishal's Functional Fitness Studio";
+const text4 = "Vishal's Functional Fitness Studio";
+const text5 = "Vishal's Functional Fitness Studio";
 
 const items = [
   { img: image1, text: text1 },
