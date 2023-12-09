@@ -7,9 +7,9 @@ const Intro = () => {
     <div className={styles.introContainer}>
       <div className={styles.introBgOnly}></div>
       <div transition-style="in:circle:hesitate" className={styles.introTextDiv}>
-        <p className={styles.introText}>
+        <h1 className={styles.introText}>
           Vishal's Functional Fitness Studio
-        </p>
+        </h1>
         <div className={styles.introBoldTextDiv}>
           <span className={styles.fitnessTextBold}>
             Where Fitness Becomes Your Lifestyle
