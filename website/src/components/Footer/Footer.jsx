@@ -3,6 +3,8 @@ import styles from "./footer.module.css";
 import ContactForm from "../ContactForm/ContactForm";
 import AddressComp from "../AddressComp/AddressComp";
 import FooterNav from "../FooterNavigation/FooterNav";
+import instaLogo from "../../gallery/instaLogo.png";
+import ytLogo from "../../gallery/ytLogo.png";
 
 const Footer = () => {
   return (
@@ -22,6 +24,29 @@ const Footer = () => {
           <FooterNav />
         </div>
       </div>
+
+      {/* DevSachin Logos and contact */}
+      <div className={styles.devSachinInfo}>
+        <div className={styles.LtoRanimatedDiv}>
+          <div className={styles.devSachinText}>
+            <div>Designed and Developed with love by DevSachin </div>
+            <div className={styles.devSachinLogos}>
+              <div>
+                <img src={instaLogo} alt="instaLogoForDevSachin" />
+              </div>
+              <div>
+                <img src={ytLogo} alt="instaLogoForDevSachin" />
+              </div>
+              <div>
+                <img src={instaLogo} alt="instaLogoForDevSachin" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* last div */}
+      <div className={styles.footerLastDiv}></div>
     </div>
   );
 };
