@@ -29,16 +29,16 @@ const Footer = () => {
       <div className={styles.devSachinInfo}>
         <div className={styles.LtoRanimatedDiv}>
           <div className={styles.devSachinText}>
-            <div>Designed and Developed with love by DevSachin </div>
+            <div>Designed and Developed with love ♥ by Coder_Sachin </div>
             <div className={styles.devSachinLogos}>
               <div>
-                <img src={instaLogo} alt="instaLogoForDevSachin" />
+                <img className={styles.devSachinContactIcons} src={instaLogo} alt="instaLogoForDevSachin" />
               </div>
               <div>
-                <img src={ytLogo} alt="instaLogoForDevSachin" />
+                <img className={styles.devSachinContactIcons} src={ytLogo} alt="instaLogoForDevSachin" />
               </div>
               <div>
-                <img src={instaLogo} alt="instaLogoForDevSachin" />
+                <img className={styles.devSachinContactIcons} src={instaLogo} alt="instaLogoForDevSachin" />
               </div>
             </div>
           </div>

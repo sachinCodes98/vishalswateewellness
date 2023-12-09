@@ -80,6 +80,9 @@
       transform: translateX(-100%); /* Move off-screen to the left */
     }
   }
+  .devSachinContactIcons{
+    cursor: pointer;
+  }
 
   .footerLastDiv{
     width: 100%;
