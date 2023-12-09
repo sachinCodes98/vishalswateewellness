@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import loginIcon from "../../gallery/loginIcon.png";
+// import loginIcon from "../../gallery/loginIcon.png";
+import getinShape_logo from "../../gallery/getinShape_logo.jpg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -40,9 +41,12 @@ const Navbar = () => {
         <div className={styles.membershipBtnDiv}>
           <p>Membership</p>
         </div>
-        <div className={styles.loginBtnDiv}>
+        {/* <div className={styles.loginBtnDiv}>
           <img className={styles.loginIcon} src={loginIcon} alt="login" />
           <p>Login</p>
+        </div> */}
+        <div className={styles.loginBtnDiv}>
+          <img className={styles.logoIcon} src={getinShape_logo} alt="logo" />
         </div>
       </div>
       {isMenuOpen && (
