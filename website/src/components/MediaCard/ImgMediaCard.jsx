@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 
 export default function ImgMediaCard(props) {
   const elem = props.elem;
-  console.log("elem: ", elem);
 
   return (
     <div style={{display:"flex", justifyContent: "center", margin:"auto", width:"100%",}}>
