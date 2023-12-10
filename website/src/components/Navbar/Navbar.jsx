@@ -22,8 +22,12 @@ const Navbar = () => {
         <div className={styles.navLeftBtns}>
           <Link to="/classes">Classes</Link>
         </div>
-        <div className={styles.navLeftBtns}>Challenges</div>
-        <div className={styles.navLeftBtns}>Plans</div>
+        <div className={styles.navLeftBtns}>
+          <Link to="/challenges">Challenges</Link>
+        </div>
+        <div className={styles.navLeftBtns}>
+        <Link to="/plans">Plans</Link>
+        </div>
         <div className={styles.navLeftBtns}>
           <Link to="/contact">Contact</Link>
         </div>
