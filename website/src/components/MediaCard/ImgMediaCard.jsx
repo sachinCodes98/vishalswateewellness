@@ -17,6 +17,7 @@ export default function ImgMediaCard(props) {
         alt={elem.text}
         height="auto"
         image={elem.img}
+        title={elem.text}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -34,9 +35,10 @@ export default function ImgMediaCard(props) {
             color: "#fff",
             backgroundColor: "#391d94",
             textAlign: "center",
+            padding:"1.5vh 2vw"
           }}
         >
-          Book Now
+          Join Now
         </Button>
       </CardActions>
     </Card>
